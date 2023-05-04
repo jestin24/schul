@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<!--    <title>Login Form</title>-->
+<!--    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">-->
+    <style>
+        h2 {text-align: center;}
+
+    </style>
+</head>
+<body style="background-color:powderblue;">
+    <h2>Login Page</h2><br>
+    <center>
+    <div  class="login">
+    <form id="login" method="get" action="login.php">
+        <label><b>User Name
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username">
+        <br><br>
+        <label><b>Password
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">
+        <br><br>
+      <a class="btn btn-warning"  href="{% url 'schulapp:wel' %}">SUBMIT</a>
+    </form>
+    </div>
+    </center>
+</body>
+</div>
+</html>

@@ -1,0 +1,10 @@
+<form method ='POST'>
+  {% csrf_token %}
+<body style="background-color:powderblue;font-size:60px;" >
+  <br><br><br>
+ <center>Order is confirmed<br><br>
+<a href="{% url 'schulapp:index' %}" class="btn btn-info" role="button" style="font-size:60px;">HOME</a>
+
+   </center>
+</body>
+</form>
